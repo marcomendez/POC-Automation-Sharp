@@ -9,7 +9,7 @@ Feature: Login
     And I click Login
     Then I should see 'View' displayed on Home
 
-  @WebApp @POC-1 @OPEN
+  @WebApp @POC-1 @WIP
   Scenario: Test From Jira
     Given I navigate to ClickUpp
     When I set '[UserName]' in UserName on Login
