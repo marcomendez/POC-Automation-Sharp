@@ -1,7 +1,7 @@
 @WebApp
 Feature: Login
 
-  @WebApp
+  @WebApp @POC-5 @OPEN
   Scenario: Verify login
     Given I navigate to ClickUp
     When I set '[UserName]' in UserName on Login
