@@ -4,7 +4,7 @@ Feature: User
   backgroud: mmm
   GIven I go to main page
 
-  @ORPHAN @MANUAL @WebApp
+  @ORPHAN @WebApp
   Scenario: Test from jira
     Given Given I navigate to ClickUpp
     And I set '10' in count
