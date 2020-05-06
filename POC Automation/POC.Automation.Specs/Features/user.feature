@@ -1,9 +1,10 @@
 @ApiTest
 Feature: User
 
+  I as an user I want to test bla bla bla
   
-  
-  
+  Background: mm
+    Given  I navigate to ClickUpp
 
   @ORPHAN @WebApp
   Scenario: Test from jira
