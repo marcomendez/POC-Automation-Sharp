@@ -1,1 +1,2 @@
+@WebApp
 Feature: Jira Feature
