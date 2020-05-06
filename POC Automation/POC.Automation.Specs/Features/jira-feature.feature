@@ -1,7 +1,7 @@
 @WebApp
 Feature: Jira Feature
 
-  @ORPHAN
+  @POC-5 @OPEN
   Scenario: Test Jira
     Given I go to Main Page
     And I click on Welcome button
