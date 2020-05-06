@@ -1,1 +1,2 @@
+@ApiTest
 Feature: User
