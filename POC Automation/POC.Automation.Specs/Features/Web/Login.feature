@@ -11,6 +11,6 @@ Feature: Login
 
   @WebApp @POC-1 @OPEN
   Scenario: Test From Jira
-    Given I navigate to ClickUp
+    Given I navigate to ClickUpp
     When I set '[UserName]' in UserName on Login
     And I set '[Password]' in Password
