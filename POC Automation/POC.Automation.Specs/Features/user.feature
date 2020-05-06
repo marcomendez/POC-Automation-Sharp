@@ -5,6 +5,10 @@ Feature: User
   
   Background: mm
     Given  I navigate to ClickUpp
+    And I set '10' in count
+
+  Background:
+    Given I navigate to ClickUpp
 
   @ORPHAN @WebApp
   Scenario: Test from jira
