@@ -1,5 +1,5 @@
 @WebApp
-Feature: Jira Feature
+Feature: JiraFeature
 
   @POC-5 @OPEN
   Scenario: Test Jira
