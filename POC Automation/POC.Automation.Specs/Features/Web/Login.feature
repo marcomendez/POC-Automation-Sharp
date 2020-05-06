@@ -1,6 +1,10 @@
 @WebApp
 Feature: Login
 
+  Background: mm
+    Given  I navigate to ClickUpp
+    And I set '10' in count
+
   @WebApp @POC-5 @OPEN
   Scenario: Verify login
     Given I navigate to ClickUp
