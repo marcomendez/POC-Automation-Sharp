@@ -1,8 +1,8 @@
 @WebApp
 Feature: Login
 
-  Background: mm
-    Given  I navigate to ClickUpp
+  Background:
+    Given I navigate to ClickUpp
     And I set '10' in count
 
   @WebApp @POC-5 @OPEN
