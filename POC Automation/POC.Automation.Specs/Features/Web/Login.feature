@@ -5,7 +5,7 @@ Feature: Login
     Given I navigate to ClickUpp
     And I set '10' in count
 
-  @WebApp @POC-5 @OPEN
+  @WebApp @POC-5 @POC-6 @OPEN
   Scenario: Verify login
     Given I navigate to ClickUp
     When I set '[UserName]' in UserName on Login
