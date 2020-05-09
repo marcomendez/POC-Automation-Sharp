@@ -1,4 +1,4 @@
-Feature: Jirafeaturewithbackground
+Feature: From Jira
 
   @ORPHAN
   Scenario: Test
