@@ -1,4 +1,4 @@
-Feature: NewFeaturewwwwwwwwwww
+Feature: NewFeature
 
   @ORPHAN
   Scenario: Test Scenario Name
