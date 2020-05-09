@@ -1,4 +1,4 @@
-Feature: Spaceeeeeeeeee
+Feature: Space
 
   @ApiTest
   Scenario: Verify that Space Id is Got
