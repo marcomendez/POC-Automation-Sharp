@@ -11,6 +11,8 @@
         public const string WebAppUrl = "WebAppUrl";
         public const string UserName = "UserName";
         public const string Password = "Password";
+        public const string ImplicitWait = "ImplicitWait";
+        
         #endregion
 
         public const string CurrentViewClassType = "currentViewClassType";

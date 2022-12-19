@@ -3,7 +3,7 @@ using POC.Automation.Web.Interfaces;
 
 namespace POC.Automation.Web.Elements
 {
-    public class Button : WebElement, IButton
+    public class Button : WebElement, IClickeable
     {
         public Button(string name, Locator locator) : base(name, ElementType.Button, locator)
         {

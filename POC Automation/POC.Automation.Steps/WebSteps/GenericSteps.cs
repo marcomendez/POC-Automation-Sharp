@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using POC.Automation.Web.Drivers;
+using POC.Automation.Web.Interfaces;
 using System.Threading;
 using TechTalk.SpecFlow;
 
@@ -12,7 +13,7 @@ namespace POC.Automation.Steps
         {
         }
 
-        [StepDefinition(@"I navigate to ClickUp")]
+        [StepDefinition(@"I navigate to Login")]
         public void NavigateToClickUp()
         {
             WebDriverManager.Instance.Start();
@@ -21,13 +22,15 @@ namespace POC.Automation.Steps
         [StepDefinition(@"I set '([^']+?)' in ([^']+?)(?: on ([^']+?)|)")]
         public void SetText(string text, string elementName, string PageName)
         {
-            Element(elementName, PageName).SetText(text);
+            ITexteable texteable = (ITexteable) Element(elementName, PageName);
+            texteable.SetText(text);
         }
 
         [StepDefinition(@"I click ([^']+?)(?: on ([^']+?)|)")]
         public void Click(string elementName, string PageName)
         {
-            Element(elementName, PageName).Click();
+            IClickeable clickeable = (IClickeable) Element(elementName, PageName);
+            clickeable.Click();
         }
 
         [StepDefinition(@"I should see '([^']+?)' displayed(?: on ([^']+?)|)")]

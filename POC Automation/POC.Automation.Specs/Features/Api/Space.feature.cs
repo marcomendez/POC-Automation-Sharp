@@ -83,7 +83,7 @@ namespace POC.Automation.Specs.Features.Api
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify that Space Id is Got", null, new string[] {
                         "ApiTest"});
 #line 4
-this.ScenarioInitialize(scenarioInfo);
+  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -103,13 +103,13 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 5
- testRunner.Given("I send \'GetTeam\' from Team as \'TeamResponse\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.Given("I send \'GetTeam\' from Team as \'TeamResponse\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 6
- testRunner.When("I send \'GetTeamById\' with \'TeamResponse\' from Space as \'SpaceResponse\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("I send \'GetTeamById\' with \'TeamResponse\' from Space as \'SpaceResponse\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 7
- testRunner.Then("I should see \'3043881\' in SpaceID with \'SpaceResponse\' from Space", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("I should see \'3043881\' in SpaceID with \'SpaceResponse\' from Space", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -118,14 +118,20 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Verify that Space is Created")]
         [NUnit.Framework.CategoryAttribute("ApiTest")]
+        [NUnit.Framework.CategoryAttribute("POC-5")]
+        [NUnit.Framework.CategoryAttribute("OPEN")]
         public virtual void VerifyThatSpaceIsCreated()
         {
             string[] tagsOfScenario = new string[] {
-                    "ApiTest"};
+                    "ApiTest",
+                    "POC-5",
+                    "OPEN"};
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify that Space is Created", null, new string[] {
-                        "ApiTest"});
+                        "ApiTest",
+                        "POC-5",
+                        "OPEN"});
 #line 10
-this.ScenarioInitialize(scenarioInfo);
+  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -145,17 +151,17 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 11
- testRunner.Given("I send \'GetTeam\' from Team as \'TeamResponse\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.Given("I send \'GetTeam\' from Team as \'TeamResponse\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 12
- testRunner.When("I send \'CreateSpace\' with \'SpaceName\' and \'TeamResponse\' from Space as \'SpaceResp" +
+    testRunner.When("I send \'CreateSpace\' with \'SpaceName\' and \'TeamResponse\' from Space as \'SpaceResp" +
                         "onseCreated\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 13
- testRunner.Then("I should see \'SpaceName\' in SpaceName with \'SpaceResponseCreated\' from Space", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("I should see \'SpaceName\' in SpaceName with \'SpaceResponseCreated\' from Space", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 14
-  testRunner.And("I send \'DeleteSpace\' with \'SpaceResponseCreated\' from Space as \'SpaceResponseDele" +
+    testRunner.And("I send \'DeleteSpace\' with \'SpaceResponseCreated\' from Space as \'SpaceResponseDele" +
                         "ted\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }

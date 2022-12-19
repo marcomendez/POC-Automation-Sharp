@@ -19,9 +19,10 @@ namespace POC.Automation.Web.Drivers
 
         public void Start()
         {
-            webDriver = new ChromeDriver();
+            webDriver = new ChromeDriver(@"C:\Users\Marco.Mendez\Downloads\Compressed\");
             webDriver.Navigate().GoToUrl(Env.WebAppUrl);
             webDriver.Manage().Window.Maximize();
+            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(int.Parse(Env.ImplicitWait));
         }
 
         public IWebDriver WebDriver

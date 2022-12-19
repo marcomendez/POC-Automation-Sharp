@@ -1,6 +1,6 @@
 ﻿namespace POC.Automation.Web.Interfaces
 {
-    public interface IButton
+    public interface IClickeable
     {
         void Click();
 

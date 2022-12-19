@@ -9,18 +9,6 @@ namespace POC.Automation.Web.Elements
         {
         }
 
-        public bool Displayed()
-        {
-            try
-            {
-                return Element.Displayed;
-            }
-            catch 
-            {
-                return false;
-            }
-        }
-
         public string GetText()
         {
             return Element.Text;

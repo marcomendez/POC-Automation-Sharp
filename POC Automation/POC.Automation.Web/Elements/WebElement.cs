@@ -16,9 +16,23 @@ namespace POC.Automation.Web.Elements
             ElementType = type;
             Locator = locator;
         }
+
         public virtual OpenQA.Selenium.IWebElement Element
         {
             get => WebDriverManager.Instance.WebDriver.FindElement(Locator.GetBy());
+        }
+
+
+        public bool Displayed()
+        {
+            try
+            {
+                return Element.Displayed;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

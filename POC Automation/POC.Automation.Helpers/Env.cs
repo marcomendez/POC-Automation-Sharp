@@ -16,6 +16,7 @@ namespace POC.Automation.Helpers
 
         public static string UserName = GetKeyName(Keys.UserName);
         public static string Password = GetKeyName(Keys.Password);
+        public static string ImplicitWait = GetKeyName(Keys.ImplicitWait);
 
         /// <summary>
         /// Gets Value from App.config.

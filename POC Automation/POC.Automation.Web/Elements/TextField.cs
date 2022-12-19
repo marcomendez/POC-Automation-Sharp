@@ -3,7 +3,7 @@ using POC.Automation.Web.Interfaces;
 
 namespace POC.Automation.Web.Elements
 {
-    public class TextField : WebElement, ITextField
+    public class TextField : WebElement, ITexteable
     {
         public TextField(string name, Locator locator) 
             : base(name, ElementType.TextField, locator)
